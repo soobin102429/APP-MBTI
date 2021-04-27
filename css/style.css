@@ -1,18 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body,html
+{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: 'Jeju Gothic', sans-serif;
+}
+.container{
+    width: 500px;
+}
 article{
     display: flex;
     flex-direction: column;
+    margin: auto auto;
 }
-
+.progress-bar{
+    background-color: #333;
+}
 .question{
     display: none;
 }
-
 .result{
     display: none;
 }
-
+#title{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.title,#animal{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+.font{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.font2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.line-height-btn{
+    line-height: 50px;
+    border-radius: 15px;
+    background-color: rgb(9, 9, 9);
+}
+.line-height-btn:hover{
+    background-color: #000;
+}
+.btn-dark{
+    background-color: black !important;
+}
 #img{
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    -webkit-user-drag: none;
+}
+#img2{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    -webkit-user-drag: none;
+}
+#mbti-result{
+    text-align: left !important;
+}
+#explain{
+    font-size: 15px;
 }
