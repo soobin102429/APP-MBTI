@@ -69,7 +69,18 @@ article{
 }
 #mbti-result{
     text-align: left !important;
+    line-height: 25px;
+    background: rgb(255, 255, 255);
+    padding: 30px 0;
+    color: black;
 }
 #explain{
     font-size: 15px;
+}
+.logo{
+    width: 70px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 40%;
+    bottom: 0;
 }
