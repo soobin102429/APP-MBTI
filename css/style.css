@@ -20,6 +20,9 @@ article{
 .progress-bar{
     background-color: #333;
 }
+.button-c{
+    margin-top: 50vh;
+}
 .question{
     display: none;
 }
