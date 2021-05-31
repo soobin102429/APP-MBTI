@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> 친구 유형 테스트 MBTI</title>
+        <title> 동물의숲 MBTI</title>
         <link rel="icon" type="image/png"  href="images/favicon.ico">
         <!-- Latest compiled and minified CSS -->
         <link
@@ -15,34 +15,90 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body class="container">
-        <article class="start">
-            <h1 class="mt-5 text-center title">나랑 맞는 친구 유형은?</h1>
-            <img src="images/19.gif" alt="친구" id="img2">
-            <button type="button" class="btn button-c  btn-dark mt-5 font line-height-btn" onclick="start();">테스트 시작</button>
-         
-        </article>
-        <article class="question">
-            <div class="progress mt-5">
-                <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <body>
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <article class="start">
+                            <img src="images/logo-t.png" alt="" class="img1">
+                            <img src="images/logo.png" alt="" class="img">
+                            <h3 class="mt-5 text-center title font">나랑 비슷한 숲속 동물은?</h3>
+                            <button type="button" class="btn mt-5 font btn-dark line-height-btn btn-wS" onclick="start();">테스트 시작</button>
+                         
+                        </article>
+                        <article class="question">
+                            <div class="progress mt-5">
+                                <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h2 class="text-center mt-5 font2" id="title">정확한 분석을 위해 <br>당신의 성별을 선택해주세요!</h2>
+                            <input type="hidden" value="EI" id="type">
+                            <button id="A" type="button" class="btn  btn-dark mt-5 font line-height-btn">여자</button>
+                            <button id="B" type="button" class="btn  btn-dark mt-5 font line-height-btn">남자</button>
+                        </article>
+
+                        <article class="result text-center">
+                            <div class="result-detail">
+                                <p id="animal" class="font2 mb-3">
+                                   생각많은<br>'고슴도치'
+                                </p>
+                                <img src="images/hedge.png" alt="동물사진" class="img2 mb-3" id="img">
+                                <p id="mbti-name" class="font result-tit mb-4">'좋은 사람이 되고싶어요'</p>
+                                <p id="mbti-result" class="font mb-4">
+                                    당신의 본캐는 필요하거나 원하는 일을 끝까지 해내며, 은근히 계획적이고 감수성이 풍부한 곰이예요. 부캐는 생각이 많고 혼자 노는 것이 좋은 고슴도치입니다. 이런 나도 괜찮다면 먼저 다가와 주기를 바래...라고 생각하고 있군요.
+                                </p>
+                                <p class="font mb-4 explain">
+                                    당신의 작고 소중한 <span id="explain">곰슴도치</span>가 편안함을 느끼는 세 가지는 무엇일까요?
+                                </p>
+                                <p class="font-pur">
+                                    #힐링모먼트
+                                </p>
+                                <p id="explain1" class="font-gr">
+                                    오늘 할 일을 내일의 나에게 맡기기로 결정했을 때
+                                </p>
+                                <p class="font-pur">
+                                    #힐링스테이
+                                </p>
+                                <p id="explain2" class="font-gr">
+                                    물이 흐르는 공간 (예: 양재천)
+                                </p>
+                                <p class="font-pur">
+                                    #힐링사운드
+                                </p>
+                                <p id="explain3" class="font-gr">
+                                    여름 밤의 귀뚜라미 소리
+
+                                </p>
+                            </div>
+                            <div class="result-bottom">
+                                <h5 class="result-tit font">
+                                    나와 가장 잘 맞는 친구는?
+                                    <br><br>
+                                    <strong id="friend-tit">많이먹는<br>'하마'</strong>
+                                </h5>
+                                <img src="images/hippo.png" alt="나랑 가장 잘 맞는 친구는?" class="img-result img2" id="friend">
+                            </div>
+                            <div class="result-sns">
+                                <h5 class="result-tit font">
+                                    친구에게 결과 공유하기
+                                </h5>
+                                <div class="sns-wrap d-flex align-items-center justify-content-center">
+                                    <a href="#" class="mr-4 img3"><img src="images/facebook.png"></a>
+                                    <a href="#" class="mr-4 img3"><img src="images/kakao.png"></a>
+                                    <a href="#" class="img3"><img src="images/url.png"></a>
+                                </div>
+                            </div>
+                            <div class="restart font" onclick="window.location.reload()">테스트 다시하기></div>
+                        </article>
+                    </div>
+                </div>
+                
+                <input type="hidden" value="0" id="EI">
+                <input type="hidden" value="0" id="SN">
+                <input type="hidden" value="0" id="TF">
+                <input type="hidden" value="0" id="JP">
             </div>
-            <h2 class="text-center mt-5 font2" id="title">정확한 분석을 위해 <br>당신의 성별을 선택해주세요!</h2>
-            <input type="hidden" value="EI" id="type">
-            <button id="A" type="button" class="btn  btn-dark mt-5 font line-height-btn">여자</button>
-            <button id="B" type="button" class="btn  btn-dark mt-5 font line-height-btn">남자</button>
-        </article>
-        <article class="result text-center">
-            <h2 id="animal" class="mt-5 font2">이름</h2>
-            <h2 id="mbti-name" class="mt-5 font2">mbti-name</h2>
-            <p id="explain" class="mt-5 font2">설명</p>
-            <img src="images/11.gif" alt="오버액션토끼" id="img">
-            <p id="mbti-result" class="mt-5 font">MBTI</p>
-        </article>
-        
-        <input type="hidden" value="0" id="EI">
-        <input type="hidden" value="0" id="SN">
-        <input type="hidden" value="0" id="TF">
-        <input type="hidden" value="0" id="JP">
+        </div>
 
         <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
