@@ -164,3 +164,9 @@ article{
 .img3>img{
     width: 70px;
 }
+@media(max-width:541px){
+    #title{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
